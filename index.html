@@ -22,12 +22,33 @@
     <main>
 
         <section>
-            <h2 class="title">Assistente de meta</h2>
-            <p> Pergunte sobre estratégias, builds e dicas sobre seus jogos!</p>
+            <div class="text-box">
+                <h2 class="title">Assistente de meta</h2>
+                <p> Pergunte sobre estratégias, builds e dicas sobre seus jogos!</p>
+
+                <form id="form">
+                    <input id="apiKey" type="password" placeholder="informe a chave API" required>
+                    <select id="gameSelect">
+                        <option value=""> Selecione uma opção</option>
+                        <option value="valorant">Valorant</option>
+                        <option value="lol">League of Legends</option>
+                        <option value="csgo">CS: GO</option>
+                    </select>
+                    <input id="questionInput" type="text" placeholder="Ex: melhor build para graves JG">
+                    <button id="askButton"> Perguntar </button>
+                </form>
+
+                <div id="aiResponse">
+                    <div class="response-content">
+
+                    </div>
+                </div>
+            </div>            
         </section>
 
     </main>
 
+    <script src="./src/js/main.js"></script>
 </body>
 
 </html>
